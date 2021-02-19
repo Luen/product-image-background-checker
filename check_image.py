@@ -25,9 +25,9 @@ def get_color_rgb(color):
     b = color[2]
     t = 255/2 #threshold
     if r>t and g>t and b>t:
-        return "black"
-    elif r<t and g<t and b<t:
         return "white"
+    elif r<t and g<t and b<t:
+        return "black"
     elif r>t:
         if g<t and b<t:
             return "red"
