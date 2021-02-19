@@ -32,14 +32,23 @@ def get_color_rgb(color):
         if g<t and b<t:
             return "red"
         elif g>t and b<t:
-            return "red green"
+            if r>g:
+                return "red green"
+            else:
+                return "green red"
         else:
-            return "red blue"
+            if r>b:
+                return "red blue"
+            else:
+                return "blue red"
     elif g>t:
         if b<t:
             return "green"
         else:
-            return "green blue"
+            if g>b:
+                return "green blue"
+            else:
+                return "blue green"
     else:
         return "blue"
 
