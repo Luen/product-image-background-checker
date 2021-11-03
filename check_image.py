@@ -166,7 +166,7 @@ with open('images_processed.csv', mode='w') as imgs_processed:
         for row in csv_reader:
             if line_count == 0:
                 line_count += 1 # skip headers
-            elif row[1] != "":
+            elif row[1] != "": # if url not blank
                 code = row[0]
                 #url = 'https://go.cin7.com/webfiles/ProSciTechAU/webpages/images/275564/h677-24_tn.jpg'
                 url = str(row[1])
